@@ -1,0 +1,15 @@
+---
+# tasks file for geosword.clementine.
+#
+- name: install package Clementine from the arch tree
+  pacman:
+    name:
+      - clementine
+      - gst-plugins-good
+      - gst-plugins-base
+      - gst-libav
+      - gst-plugins-bad
+      - gst-plugins-ugly
+    state: present
+    update_cache: true
+  become: true
